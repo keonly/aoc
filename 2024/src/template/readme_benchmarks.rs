@@ -89,7 +89,7 @@ fn update_content(s: &mut String, timings: Timings, total_millis: f64) -> Result
 }
 
 pub fn update(timings: Timings) -> Result<(), Error> {
-    let path = "README.md";
+    let path = "../README.md";
     let mut readme = String::from_utf8_lossy(&fs::read(path)?).to_string();
     let total_millis = timings.total_millis();
     update_content(&mut readme, timings, total_millis)?;
