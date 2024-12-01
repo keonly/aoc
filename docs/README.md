@@ -4,10 +4,6 @@
 
 Solutions for [Advent of Code](https://adventofcode.com/) in [Rust](https://www.rust-lang.org/).
 
-<!--- advent_readme_stars table --->
-
-<!--- benchmarking table --->
-
 ---
 
 ## Template setup
@@ -25,7 +21,7 @@ This template supports all major OS (macOS, Linux, Windows).
 
 1.  Install the [Rust toolchain](https://www.rust-lang.org/tools/install).
 2.  (recommended) Install the [rust-analyzer](https://rust-analyzer.github.io/manual.html) extension for your code editor.
-3.  (optional) Install a native debugger. If you are using VS Code, [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) is a good option.
+3.  (optional) Install a native debugger.
 
 ---
 
@@ -237,6 +233,7 @@ Go to the leaderboard page of the year you want to track and click _Private Lead
 Go to the _Secrets_ tab in your repository settings and create the following secrets:
 
 -   `AOC_USER_ID`: Go to [this page](https://adventofcode.com/settings) and copy your user id. It's the number behind the `#` symbol in the first name option. Example: `3031`.
+-   `AOC_LEADERBORAD_ID`: Go to the leaderboard and press 'View' (or 'Create' if you haven't yet created a private leaderboard). The leaderboard ID is at the end of the URL. Example: `9999`.
 -   `AOC_YEAR`: the year you want to track. Example: `2021`.
 -   `AOC_SESSION`: an active session[^2] for the advent of code website. To get this, press F12 anywhere on the Advent of Code website to open your browser developer tools. Look in your Cookies under the Application or Storage tab, and copy out the `session` cookie.
 
@@ -269,13 +266,6 @@ cargo solve 1 --dhat
 The command will output some basic stats to the command-line and generate a `dhat-heap.json` report in the repo root directory.
 
 You can pass the report a tool like [dh-view](https://nnethercote.github.io/dh_view/dh_view.html) to view a detailed breakdown of heap allocations.
-
-### Use VS Code to debug your code
-
-1.  Install [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) and [CodeLLDB](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb).
-2.  Set breakpoints in your code. [^3]
-3.  Click _Debug_ next to the unit test or the _main_ function. [^4]
-4.  The debugger will halt your program at the specific line and allow you to inspect the local stack. [^5]
 
 ## Useful crates
 
