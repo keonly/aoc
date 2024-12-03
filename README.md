@@ -6,6 +6,7 @@ Solutions for [Advent of Code](https://adventofcode.com/) in [Rust](https://www.
 
 <details>
   <summary>2024</summary>
+
 <!--- advent_readme_stars table --->
 ## 2024 Results
 
@@ -23,7 +24,8 @@ Solutions for [Advent of Code](https://adventofcode.com/) in [Rust](https://www.
 | :---: | :---: | :---:  |
 | [Day 1](./src/bin/01.rs) | `41.1µs` | `46.2µs` |
 | [Day 2](./src/bin/02.rs) | `87.1µs` | `357.9µs` |
+| [Day 3](./src/bin/03.rs) | `244.0µs` | `266.7µs` |
 
-**Total: 0.53ms**
+**Total: 1.04ms**
 <!--- benchmarking table --->
 </details>
